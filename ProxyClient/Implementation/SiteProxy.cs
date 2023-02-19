@@ -1,4 +1,6 @@
-﻿using ProxyClient.Interfaces;
+﻿using Microsoft.Extensions.Options;
+using ProxyClient.Configuration;
+using ProxyClient.Interfaces;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 
@@ -7,13 +9,14 @@ namespace ProxyClient.Implementation
     public class SiteProxy : ISiteProxy
     {
         private readonly HttpClient _httpClient;
-
         private readonly string _proxyServerAddress;
+        private readonly int _maxRetries;
 
-        public SiteProxy(string proxyServerAddress)
+        public SiteProxy(IOptions<ProxyServerOptions> options)
         {
             _httpClient = new HttpClient();
-            _proxyServerAddress = proxyServerAddress;
+            _proxyServerAddress = options.Value.Address;
+            _maxRetries = options.Value.MaxRetries;
         }
 
         public string GetModifiedContent(string url)
