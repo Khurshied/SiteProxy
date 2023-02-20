@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khurs\\OneDrive\\Desktop\\Assignment-Khursheed\\SiteProxy\\ProxyClient\\ProxyClient.csproj": {}
+    "C:\\Users\\Khursheed.Bhat\\Source\\Repos\\SiteProxy\\ProxyClient\\ProxyClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khurs\\OneDrive\\Desktop\\Assignment-Khursheed\\SiteProxy\\ProxyClient\\ProxyClient.csproj": {
+    "C:\\Users\\Khursheed.Bhat\\Source\\Repos\\SiteProxy\\ProxyClient\\ProxyClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khurs\\OneDrive\\Desktop\\Assignment-Khursheed\\SiteProxy\\ProxyClient\\ProxyClient.csproj",
+        "projectUniqueName": "C:\\Users\\Khursheed.Bhat\\Source\\Repos\\SiteProxy\\ProxyClient\\ProxyClient.csproj",
         "projectName": "ProxyClient",
-        "projectPath": "C:\\Users\\khurs\\OneDrive\\Desktop\\Assignment-Khursheed\\SiteProxy\\ProxyClient\\ProxyClient.csproj",
-        "packagesPath": "C:\\Users\\khurs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khurs\\OneDrive\\Desktop\\Assignment-Khursheed\\SiteProxy\\ProxyClient\\obj\\",
+        "projectPath": "C:\\Users\\Khursheed.Bhat\\Source\\Repos\\SiteProxy\\ProxyClient\\ProxyClient.csproj",
+        "packagesPath": "C:\\Users\\Khursheed.Bhat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Khursheed.Bhat\\Source\\Repos\\SiteProxy\\ProxyClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\khurs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khursheed.Bhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,6 +42,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
